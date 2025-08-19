@@ -12,11 +12,17 @@
     <header>
         <section class="section flex__container">
             <div class="logo logo--animate"></div>
-            <nav>
+            <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
+            <label for="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav">
                 <ul class="flex__container nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Help</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#help" class="nav__link">Help</a></li>
+                    <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Sign Up</a></li>
                 </ul>
             </nav>
@@ -24,14 +30,14 @@
         </section>
     </header>
     <main>
-        <section class="section">
+        <section id="home" class="section">
             <h1>Save your data storage here.</h1>
             <p>Data Warehouse is a data storage area that has been tested for security, so you can store your data here
                 safely but not be afraid of being stolen by others.</p>
             <button class="button button--purpur">Learn More</button>
             <img src="./img/first-screen-img.png" alt="Icon of a person with a laptop" class="first-screen__img">
         </section>
-        <section class="section">
+        <section id="help" class="section">
             <img src="./img/image.png" alt="">
             <div class="flex__column">
                 <h3>We are a high-level data storage bank</h3>
@@ -42,7 +48,7 @@
                     must enter the password that you created when you registered in this Data Warehouse. </p>
             </div>
         </section>
-        <section class="section flex__column">
+        <section id="features" class="section flex__column">
             <div class="flex__column">
                 <h3>Features</h3>
                 <p>Some of the features and advantages that we provide for those of you who store data in this Data
@@ -132,9 +138,12 @@
                         </div>
                         <address>
                             Warehouse Society, 234<br>
-                            Bahagia Ave Street PRBW 29281<br><br>
-                            info@warehouse.project<br><br>
-                            1-232-3434 (Main)
+                            Bahagia Ave Street PRBW 29281<br>
+                            <span>
+                                info@warehouse.project<br>
+                                1-232-3434 (Main)
+                            </span>
+
                         </address>
                     </div>
 
@@ -184,7 +193,8 @@
                         </div>
                     </div>
                 </div>
-                <p class="footer__copyright">© Datawarehouse™, 2020. All rights reserved. Company Registration Number: 21479524.</p>
+                <p class="footer__copyright">© Datawarehouse™, 2020. All rights reserved. Company Registration Number:
+                    21479524.</p>
             </section>
         </footer>
     </main>
