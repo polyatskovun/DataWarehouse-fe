@@ -738,6 +738,7 @@ main .section:nth-child(3) .feature__block::before {
   height: 100%;
   border-radius: 50px;
   z-index: -1;
+  transition: background-color 0.6s ease, transform 0.3s ease;
 }
 @media (max-width: 768px) {
   main .section:nth-child(3) .feature__block::before {
@@ -747,17 +748,32 @@ main .section:nth-child(3) .feature__block::before {
     height: 78%;
   }
 }
+main .section:nth-child(3) .feature__block:hover::before {
+  transform: scale(1.02);
+}
 main .section:nth-child(3) .feature__block:nth-child(1)::before {
   background-color: #F0FAF9;
+}
+main .section:nth-child(3) .feature__block:nth-child(1):hover::before {
+  background-color: #E0F9F7;
 }
 main .section:nth-child(3) .feature__block:nth-child(2)::before {
   background-color: #F6F0FD;
 }
+main .section:nth-child(3) .feature__block:nth-child(2):hover::before {
+  background-color: #EDE0FB;
+}
 main .section:nth-child(3) .feature__block:nth-child(3)::before {
   background-color: #FEF0F8;
 }
+main .section:nth-child(3) .feature__block:nth-child(3):hover::before {
+  background-color: #FDE0F4;
+}
 main .section:nth-child(3) .feature__block:nth-child(4)::before {
   background-color: #EAF6FC;
+}
+main .section:nth-child(3) .feature__block:nth-child(4):hover::before {
+  background-color: #DCF0FA;
 }
 main .section:nth-child(3) .feature__block img {
   width: 180px;
@@ -1365,4 +1381,4 @@ body.menu-open {
   .show-mobile {
     display: block;
   }
-}/*# sourceMappingURL=style.css.map */
+}
